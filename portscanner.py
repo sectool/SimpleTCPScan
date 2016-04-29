@@ -20,7 +20,7 @@ portscanner_ico = '''
 print portscanner_ico
 print star
 if __name__ == '__main__':
-    target = raw_input('Enter Host To Scan ---> ')
+    target = raw_input('Taranacak Ip Adresini giriniz ---> ')
     targetIP = gethostbyname(target)
     print star
     print 'Starting scan on host... ', targetIP
