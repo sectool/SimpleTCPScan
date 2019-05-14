@@ -16,7 +16,6 @@ portscanner_ico = '''
 #              DEVELOPER : İSMAİL TAŞDELEN              #                       
 #        Mail Address : pentestdatabase@gmail.com       #
 # LINKEDIN : https://www.linkedin.com/in/ismailtasdelen #
-#           Whatsapp : + 90 534 295 94 31               #
 #########################################################
 '''
 
@@ -25,7 +24,7 @@ print portscanner_ico
 print star
 
 if __name__ == '__main__':
-    target = raw_input('Taranacak Ip Adresini giriniz ---> ')
+    target = raw_input('TARGET IP : ')
     targetIP = gethostbyname(target)
     print star
     print 'Starting scan on host... ', targetIP
@@ -37,5 +36,5 @@ if __name__ == '__main__':
         result = s.connect_ex((targetIP, port_araligi))
 
         if(result == 0) :
-            print 'PORT %d: AÇIK' % (port_araligi,)
+            print 'PORT %d: OPEN' % (port_araligi,)
         s.close()
