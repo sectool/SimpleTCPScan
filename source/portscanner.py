@@ -8,15 +8,7 @@ star = '*********************************************************************'
 print star
 
 portscanner_ico = '''
-#########################################################
-#              PORT SCANNER - GH0ST S0FTWARE            #
-######################################################### 
-#                       CONTACT                         #
-#########################################################
-#              DEVELOPER : İSMAİL TAŞDELEN              #                       
-#        Mail Address : pentestdatabase@gmail.com       #
-# LINKEDIN : https://www.linkedin.com/in/ismailtasdelen #
-#########################################################
+
 '''
 
 print portscanner_ico
