@@ -22,16 +22,16 @@ print star
 
 if __name__ == '__main__':
     target = raw_input('TARGET IP : ')
-    targetIP = gethostbyname(target)
+    target_IP = gethostbyname(target)
     print star
-    print 'Starting scan on host... ', targetIP
+    print 'Starting scan on host... ', targe_tIP
     print star
 
-    for port_araligi in range(0, 65535):
+    for port_range in range(0, 65535):
         s = socket(AF_INET, SOCK_STREAM)
 
-        result = s.connect_ex((targetIP, port_araligi))
+        result = s.connect_ex((target_IP, port_range))
 
         if(result == 0) :
-            print 'PORT %d: OPEN' % (port_araligi,)
+            print 'PORT %d: OPEN' % (port_range,)
         s.close()
